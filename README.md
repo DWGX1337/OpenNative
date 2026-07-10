@@ -1,26 +1,81 @@
 # OpenNative
 
-## Compliance Notice / 合规声明
-
-- 本仓库仅用于学习、逆向研究、调试分析和兼容性研究。
-- 禁止用于未授权访问、破坏服务、隐私侵害、在线作弊、恶意传播等行为。
-- 使用者需自行遵守当地法律、平台条款与相关 EULA。
-- 完整声明见 [DISCLAIMER.md](./DISCLAIMER.md)
+> 以前写的 Minecraft client 狗屎实验，没什么技术力但很有时代感。
+> An old Minecraft client experiment — kept for its period charm.
 
 ---
 
-这个仓库目前是一个历史资料存档仓，核心文件是：
+## Overview
 
-- `OpenNative.rar`
+OpenNative is an early Minecraft client project, written in Java. It's a personal practice piece from back in the day — not polished, not impressive, but real. The repo preserves it as-is for anyone interested in Minecraft client internals, reverse-engineering patterns, or just seeing how things were done in that era.
 
-## 说明
+## 概述
 
-- 仓库目标是保留历史版本资料，方便后续研究和对比
-- 不保证压缩包内容可直接编译或直接运行
-- 如果你只想看结构，建议先解压后做静态阅读
+OpenNative 是一个早期的 Minecraft 客户端项目，Java 写的。当年的练手作品，没什么技术力，但留着当成长记录。对 Minecraft 客户端逆向、调试分析感兴趣的可以翻翻看，感受一下那个时代的做法。
 
-## 使用建议
+---
 
-1. 在隔离环境中解压和查看
-2. 先阅读代码结构和依赖说明
-3. 仅用于合法合规的学习研究场景
+## Features / 功能
+
+- Minecraft client 实现（早期练习版本）
+- Java 编写，客户端级代码
+- 保留了完整的历史快照，适合对比研究
+
+---
+
+## Tech Stack / 技术栈
+
+| Item | Detail |
+|------|--------|
+| Language | Java |
+| Domain | Minecraft client |
+| Topics | `java`, `minecraft`, `minecraft-client`, `legacy-project` |
+
+构建系统和依赖信息在 `OpenNative.rar` 内部。
+
+<!-- TODO: confirm 具体构建系统（Gradle / Maven / 手动）与依赖版本 —— 解压 OpenNative.rar 后确认。 -->
+
+---
+
+## Project Structure / 项目结构
+
+```
+OpenNative/
+├── OpenNative.rar     # 核心归档：Minecraft client 项目源码（~3.8 MB）
+└── README.md
+```
+
+<!-- TODO: confirm .rar 内部结构 —— 压缩包未解压，内部源码结构未公开。 -->
+
+---
+
+## Getting Started / 快速开始
+
+核心内容打包在 `OpenNative.rar` 中。解压后查看：
+
+```sh
+# Linux/macOS
+unrar x OpenNative.rar
+# 或
+7z x OpenNative.rar
+```
+
+解压后根据内部工程文件确定构建方式。
+
+<!-- TODO: confirm 是否存在可用的构建/运行命令 —— 需解压后依据内部工程文件确定。 -->
+
+---
+
+## Status / 状态
+
+归档状态。这是一个历史项目快照，不再活跃开发。
+
+Archived. This is a historical snapshot, no longer under active development.
+
+---
+
+## License / 许可证
+
+未指定许可协议。仓库中不包含 LICENSE 文件，默认保留所有权利。
+
+No license specified. All rights reserved by default.
